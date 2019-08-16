@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4a04d8fb.chunk.css",
+    "main.js": "/static/js/main.7412757e.chunk.js",
+    "main.js.map": "/static/js/main.7412757e.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.daaf4d4d.js",
+    "runtime~main.js.map": "/static/js/runtime~main.daaf4d4d.js.map",
+    "static/js/2.7aa946ce.chunk.js": "/static/js/2.7aa946ce.chunk.js",
+    "static/js/2.7aa946ce.chunk.js.map": "/static/js/2.7aa946ce.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.48a54b25f7a079a63ffd0e2f0115c30e.js": "/precache-manifest.48a54b25f7a079a63ffd0e2f0115c30e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.4a04d8fb.chunk.css.map": "/static/css/main.4a04d8fb.chunk.css.map",
+    "static/media/drawing.jpg": "/static/media/drawing.dc1577c0.jpg",
+    "static/media/App.scss": "/static/media/portrait_small.31ad0b4d.jpg",
+    "static/media/project4.jpg": "/static/media/project4.5a100b46.jpg",
+    "static/media/project5.jpg": "/static/media/project5.babc9580.jpg",
+    "static/media/shop.jpg": "/static/media/shop.8a93ddbd.jpg",
+    "static/media/trainbooking.jpg": "/static/media/trainbooking.7eb96e64.jpg"
+  }
+}

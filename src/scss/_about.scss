@@ -1,0 +1,95 @@
+.about-info {
+  display: grid;
+  grid-template-areas: 
+  'bioimage bio bio';
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+
+  .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+  }
+  
+  .bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+  }
+}
+
+.jobs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+/*     .job-1 {
+      grid-area: job1;
+    }
+    
+    .job-2 {
+      grid-area: job2;
+    }
+    
+    .job-3 {
+      grid-area: job3;
+    }
+
+    .job-4 {
+      grid-area: job4;
+    }
+    
+    .job-5 {
+      grid-area: job5;
+    }
+    
+    .job-6 {
+      grid-area: job6;
+    } */
+    
+    .job {
+      background: lighten($primary-color, 5);
+      padding: 0.5rem;
+      border-bottom: 5px solid $secondary-color;
+      
+      opacity: 1;
+      transform: translate3d(-500px, 800px, 0) scale(0.2);
+
+      @include easeOut;
+
+      &-visible {
+        visibility: visible;
+        opacity: 1;
+        animation: slide 2s ease-in-out;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(-500px, 800px, 0) scale(0.3);
+  }
+
+95%{
+    transform: translate(-1%) scale(0.9);
+}           
+/* 100% {
+    transform: translateY(0%) scale(1);
+}  */      
+}
+ @for $x from 1 through 4 {
+  .job-visible:nth-child(#{$x}) {
+    animation-delay: $x * 0.9s; //make them slide in one NOT at the same time but with some delay (1st - 1*0.1s, 2nd - 2*0.1s, 3rd - 3*0.1s, 4th - 4*0.1s)
+  }
+} 
+
+
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: #fff;
+  height: 60px;
+}
